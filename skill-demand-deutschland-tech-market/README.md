@@ -1,5 +1,7 @@
 # Job Market Intelligence Corpus
-### Mapping Skill Demand in the German Technology Labour Market
+## Mapping Skill Demand in the German Technology Labour Market
+
+
 ## Repository Structure
 
 ```
