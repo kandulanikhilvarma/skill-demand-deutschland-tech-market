@@ -1,13 +1,6 @@
 # Job Market Intelligence Corpus
 ## Mapping Skill Demand in the German Technology Labour Market
 
-**Author:** Nikhilvarma Kandula | **Matriculation:** 839606  
-**Institution:** FOM University of Applied Sciences, Essen Campus  
-**Programme:** M.Sc. Big Data and Business Analytics  
-**Module:** Analysis of Semi-Structured and Unstructured Data  
-**Examiner:** Dr. Michael Colombo  
-**Submission Date:** 02.06.2026  
-
 ---
 
 ## Repository Structure
