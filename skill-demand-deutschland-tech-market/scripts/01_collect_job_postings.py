@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 Job Market Intelligence Corpus — Data Collection Script
-FOM University | Nikhilvarma Kandula | Matriculation: 839606
-Module: Analysis of Semi-Structured and Unstructured Data
 
 Collects job postings for data roles from StepStone (DE), Indeed (DE),
 and LinkedIn using HTTP requests + BeautifulSoup HTML parsing.
