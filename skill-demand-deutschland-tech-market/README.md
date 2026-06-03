@@ -132,9 +132,9 @@ the cleaned, deduplicated subset of 4,183 initially collected postings.
 If you use this corpus, please cite:
 
 > Kandula, N. (2026). *Job Market Intelligence Corpus: Mapping Skill Demand in the German
-> Technology Labour Market*. Project paper, FOM University of Applied Sciences, Essen.
+> Technology Labour Market*.
 
 ---
 
-*Generated as part of the M.Sc. thesis submission. All data collected from publicly accessible
+* All data collected from publicly accessible
 job posting platforms. Not for commercial redistribution.*
