@@ -97,6 +97,27 @@ The pipeline answers three research questions:
 
 ---
 
+## Architecture
+
+```mermaid
+flowchart TB
+    S1["StepStone"] --> C
+    S2["Indeed DE"] --> C
+    S3["LinkedIn"] --> C
+    C["01_collect_job_postings.py<br/>requests + BeautifulSoup"] --> R["job_postings_raw.csv<br/>4,183 postings"]
+    R --> D["02_deduplicate_clean.py<br/>Levenshtein 85%"]
+    D --> P["Clean corpus · 3,200"]
+    P --> N["03_nlp_skill_extraction.py<br/>TF-IDF + spaCy EntityRuler"]
+    N --> SK["30,324 skill-posting pairs<br/>156 skills"]
+    SK --> K["04_kmeans_clustering.py<br/>K-Means + PCA"]
+    K --> A["4 role archetypes<br/>silhouette 0.61"]
+```
+
+- **Collect** — three job platforms are scraped into a raw corpus with rate-limiting and user-agent rotation.
+- **Deduplicate** — Levenshtein matching at 85% removes cross-platform duplicates (4,183 → 3,200).
+- **Extract** — a hybrid TF-IDF + spaCy EntityRuler pipeline yields 30,324 skill-posting pairs over a 156-skill vocabulary.
+- **Cluster** — K-Means (validated by silhouette score) surfaces four interpretable role archetypes.
+
 ## Repository Structure
 
 ```
