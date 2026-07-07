@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Job Market Intelligence Corpus: Mapping Skill Demand in the German Technology Labour Market"
+authors:
+  - family-names: Kandula
+    given-names: Nikhilvarma
+    email: kandulanikhilvarma@gmail.com
+    website: "https://kandula.studio"
+type: dataset
+url: "https://github.com/kandulanikhilvarma/skill-demand-deutschland-tech-market"
+repository-code: "https://github.com/kandulanikhilvarma/skill-demand-deutschland-tech-market"
+license: MIT
+keywords:
+  - nlp
+  - labour-market
+  - germany
+  - tf-idf
+  - spacy
+  - kmeans

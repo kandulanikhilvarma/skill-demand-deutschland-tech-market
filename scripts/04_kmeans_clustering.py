@@ -8,7 +8,6 @@ Matches thesis Section 3.6.
 Output: data/kmeans_clusters.csv, figures/fig_elbow.png
 """
 import pandas as pd
-import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -58,9 +57,11 @@ def run_clustering(df):
     fig, ax = plt.subplots(figsize=(8,5))
     ax.plot(range(2,13), wcss, 'o-', color='#1F4E79')
     ax.axvline(x=4, color='#C00000', linestyle='--', label='Optimal k=4')
-    ax.set_xlabel('Number of Clusters (k)'); ax.set_ylabel('WCSS')
+    ax.set_xlabel('Number of Clusters (k)')
+    ax.set_ylabel('WCSS')
     ax.set_title('Elbow Method — Optimal k Selection')
-    ax.legend(); plt.tight_layout()
+    ax.legend()
+    plt.tight_layout()
     plt.savefig('figures/fig_elbow.png', dpi=300, bbox_inches='tight')
     print("Elbow plot saved.")
 

@@ -10,7 +10,6 @@ Requires: spacy, scikit-learn
 """
 import pandas as pd
 import spacy
-from spacy.pipeline import EntityRuler
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 SKILL_VOCABULARY = [
