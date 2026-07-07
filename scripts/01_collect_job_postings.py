@@ -160,7 +160,6 @@ def scrape_indeed(keyword: str, city: str, pages: int = 5) -> list[dict]:
                 title_el = card.select_one("h2.jobTitle span[title], h2.jobTitle a")
                 employer_el = card.select_one("span.companyName, [data-testid='company-name']")
                 date_el = card.select_one("span.date, [data-testid='myJobsStateDate']")
-                contract_el = card.select_one("div.metadata span.attribute_snippet")
 
                 if not title_el:
                     continue
@@ -200,7 +199,7 @@ def _infer_contract(title: str, keyword: str) -> str:
 
 def _parse_indeed_date(raw: str) -> str:
     """Convert Indeed relative dates to ISO format (approximate)."""
-    from datetime import datetime, timedelta
+    from datetime import timedelta
     today = datetime.today()
     raw = raw.lower().strip()
     if "heute" in raw or "today" in raw or "gerade" in raw:
