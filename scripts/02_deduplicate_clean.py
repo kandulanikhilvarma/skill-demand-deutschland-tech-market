@@ -14,7 +14,8 @@ import unicodedata
 from difflib import SequenceMatcher
 
 def normalise(text: str) -> str:
-    if not isinstance(text, str): return ""
+    if not isinstance(text, str):
+        return ""
     text = text.lower().strip()
     text = unicodedata.normalize('NFD', text)
     text = ''.join(c for c in text if unicodedata.category(c) != 'Mn')
